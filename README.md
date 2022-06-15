@@ -58,14 +58,14 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 	python knn_segmenter.py --win [number of frames to concatenate]
 				 --train_n [number of training examples to use] 
 				 --eval_n [number of evaluation examples to use]
-							--layer [index of output layer of embedding architecture]
-							--knn [number of nearest neighbors to compare to]
-							--arc [architecture name: BASE || LARGE || LARGE_LV60K || XLSR53 || HUBERT_BASE || HUBERT_LARGE || HUBERT_XLARGE]
-							--width [parameter for scipy.signal's find_peaks]
-							--distance [parameter for scipy.signal's find_peaks]
-							--prominence [parameter for scipy.signal's find_peaks]
-							--train_dir [path to training directory]
-							--val_dir [path to validation directory]
+				 --layer [index of output layer of embedding architecture]
+				 --knn [number of nearest neighbors to compare to]
+				 --arc [architecture name: BASE || LARGE || LARGE_LV60K || XLSR53 || HUBERT_BASE || HUBERT_LARGE || HUBERT_XLARGE]
+				 --width [parameter for scipy.signal's find_peaks]
+				 --distance [parameter for scipy.signal's find_peaks]
+				 --prominence [parameter for scipy.signal's find_peaks]
+				 --train_dir [path to training directory]
+				 --val_dir [path to validation directory]
 							
 							
 							
@@ -76,16 +76,16 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 
 	```
 	python knn_segmenter.py --win 10
-							--train_n 200
-							--eval_n -1
-							--layer 13
-							--knn 20
-							--arc HUBERT_LARGE
-							--width 2
-							--distance 4
-							--prominence 4
-							--train_dir datasets/buckeye_split/train/
-							--val_dir datasets/buckeye_split/val/
+				 --train_n 200
+				 --eval_n -1
+				 --layer 13
+				 --knn 20
+				 --arc HUBERT_LARGE
+				 --width 2
+				 --distance 4
+				 --prominence 4
+				 --train_dir datasets/buckeye_split/train/
+				 --val_dir datasets/buckeye_split/val/
 
 	```
 
