@@ -7,18 +7,8 @@ Joseph Keshet (joseph.keshet@cs.biu.ac.il)
 DSegKNN, is an unsupervised kNN-based approach for word segmentation in speech utterances. This method relies on self-supervised pre-trained speech representations, and compares each audio segment of a given utterance to its K nearest neighbors within the training set. 
 
 
-The paper can be found [here](). \
+The paper can be found [here](https://arxiv.org/pdf/2204.13094.pdf). 
 
-<!-- If you find our work useful, please cite: 
-```
-@article{segal2019speechyolo,
-  title={SpeechYOLO: Detection and Localization of Speech Objects},
-  author={Segal, Yael and Fuchs, Tzeviya Sylvia and Keshet, Joseph},
-  journal={Proc. Interspeech 2019},
-  pages={4210--4214},
-  year={2019}
-}
-``` -->
 
 ------
 
@@ -49,7 +39,7 @@ The paper can be found [here](). \
 
 In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() dataset. 
 
-- We use the same experimental setup as in [17](); see their [preprocessing script]().
+- We use the same experimental setup as in Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by F[elix Kreuk](https://felixkreuk.github.io/)):
 
 	 - split long wavs into smaller chunks (cut during silences)
 	 - leave 0.2 seconds of silence in the beginning and end
@@ -65,8 +55,8 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 - Run ```run_segmenter.py``` with the following options:
 
 	```
-	python knn_segmenter.py --win [int; number of frames to concatenate]
-							--train_n [number of training examples to use] 
+	python knn_segmenter.py --win [number of frames to concatenate]
+				--train_n [number of training examples to use] 
 							--eval_n [number of evaluation examples to use]
 							--layer [index of output layer of embedding architecture]
 							--knn [number of nearest neighbors to compare to]
@@ -107,5 +97,5 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 
 	(There could be some slight differences in results because 200 randomly drawn training examples are used).
 
--evaluation is from []()
+	- For comparison, the evaluation script ```eval_segmentation.py``` used here is by [Herman Kamper](https://github.com/kamperh/vqwordseg/blob/main/eval_segmentation.py).
 
