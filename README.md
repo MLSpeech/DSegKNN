@@ -56,8 +56,8 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 
 	```
 	python knn_segmenter.py --win [number of frames to concatenate]
-				--train_n [number of training examples to use] 
-							--eval_n [number of evaluation examples to use]
+				 --train_n [number of training examples to use] 
+				 --eval_n [number of evaluation examples to use]
 							--layer [index of output layer of embedding architecture]
 							--knn [number of nearest neighbors to compare to]
 							--arc [architecture name: BASE || LARGE || LARGE_LV60K || XLSR53 || HUBERT_BASE || HUBERT_LARGE || HUBERT_XLARGE]
