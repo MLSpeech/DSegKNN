@@ -37,9 +37,9 @@ The paper can be found [here](https://arxiv.org/pdf/2204.13094.pdf).
 
 ## How to use
 
-In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() dataset. 
+In this example, we will demonstrate how to run DSegKNN on the [Buckeye](https://buckeyecorpus.osu.edu/) corpus. 
 
-- We use the same experimental setup as in Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by F[elix Kreuk](https://felixkreuk.github.io/)):
+- We use the same experimental setup as in "Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)"" ([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by F[elix Kreuk](https://felixkreuk.github.io/)):
 
 	 - split long wavs into smaller chunks (cut during silences)
 	 - leave 0.2 seconds of silence in the beginning and end
@@ -97,5 +97,5 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye]() datas
 
 	(There could be some slight differences in results because 200 randomly drawn training examples are used).
 
-	- For comparison, the evaluation script ```eval_segmentation.py``` used here is by [Herman Kamper](https://github.com/kamperh/vqwordseg/blob/main/eval_segmentation.py).
+- For comparison, the evaluation script ```eval_segmentation.py``` used here is by [Herman Kamper](https://github.com/kamperh/vqwordseg/blob/main/eval_segmentation.py).
 

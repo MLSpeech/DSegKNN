@@ -32,7 +32,7 @@ args = parser.parse_args()
 print(args)
 
 
-frames_per_embedding = 160
+frames_per_embedding = 160 #(not 320), instead of multiplying by 2 later
 
 is_cuda = True
 #init seeds from SO
@@ -88,10 +88,6 @@ for idx in range(len(val_e)):
 	ref_bounds.append(ref_bound)
 	seg_bounds.append(seg_bound)
 
-
-	# if idx % 10 == 0:
-	# 	precision, recall, f = eval_segmentation.score_boundaries(ref_bounds, seg_bounds, 2)
-	# 	print(idx, precision, recall, f)
 
 precision, recall, f = eval_segmentation.score_boundaries(ref_bounds, seg_bounds, 2)
 os = eval_segmentation.get_os(precision, recall)*100
