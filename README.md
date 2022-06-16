@@ -39,7 +39,7 @@ The paper can be found [here](https://arxiv.org/pdf/2204.13094.pdf).
 
 In this example, we will demonstrate how to run DSegKNN on the [Buckeye](https://buckeyecorpus.osu.edu/) corpus. 
 
-- We use the same experimental setup as in "Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)"" ([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by F[elix Kreuk](https://felixkreuk.github.io/)):
+- We use the same experimental setup as in "Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)"" ([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by [Felix Kreuk](https://felixkreuk.github.io/)):
 
 	 - split long wavs into smaller chunks (cut during silences)
 	 - leave 0.2 seconds of silence in the beginning and end
@@ -49,7 +49,7 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye](https:/
 
 	```python buckeye_preprocess.py --spkr --source buckeye/speech/ --target datasets/buckeye_split/ --min_phonemes 20 --max_phonemes 50```
 
-	This should create `train, val` and `test` folders in your chosen target directory `buckeye_split`. Each folder cut `.wav` files, with corresponding `.word` and '.phn' files containig the start and end times of words/phonemes within the `.wav` file.
+	This should create `train, val` and `test` folders in your chosen target directory `buckeye_split`. Each folder contains cut `.wav` files, with corresponding `.word` and `'.phn'` files containig the start and end times of words/phonemes within the `.wav` file.
 
 
 - Run ```run_segmenter.py``` with the following options:
@@ -94,6 +94,8 @@ In this example, we will demonstrate how to run DSegKNN on the [Buckeye](https:/
 	```
 	Final result: 31.015404643089606 32.232243517474635 31.612118531623173 3.923337091319068 40.71275576844716
 	```
+
+	which are the `precision`, `recall`, `F-score`, `OS`, and `R-value`.
 
 	(There could be some slight differences in results because 200 randomly drawn training examples are used).
 
