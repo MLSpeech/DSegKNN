@@ -1,6 +1,6 @@
 
 #buckeye preprocessing
-#script by Felix Kreuk (https://felixkreuk.github.io/) (with some slight modifications)
+#script by Felix Kreuk (https://github.com/felixkreuk/UnsupSeg/blob/master/scripts/preprocess_buckeye.py) (with some slight modifications)
 
 
 import random

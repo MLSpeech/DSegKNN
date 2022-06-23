@@ -39,7 +39,7 @@ The paper can be found [here](https://arxiv.org/pdf/2204.13094.pdf).
 
 In this example, we will demonstrate how to run DSegKNN on the [Buckeye](https://buckeyecorpus.osu.edu/) corpus. 
 
-- We use the same experimental setup as in "Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)"" ([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script by [Felix Kreuk](https://felixkreuk.github.io/)):
+- We use the same experimental setup as in "Self-Supervised Contrastive Learning for Unsupervised Phoneme Segmentation (INTERSPEECH 2020)"" ([Paper](https://arxiv.org/pdf/2007.13465.pdf), [Code](https://github.com/felixkreuk/UnsupSeg), script based on the one by [Felix Kreuk](https://github.com/felixkreuk/UnsupSeg/blob/master/scripts/preprocess_buckeye.py)):
 
 	 - split long wavs into smaller chunks (cut during silences)
 	 - leave 0.2 seconds of silence in the beginning and end
