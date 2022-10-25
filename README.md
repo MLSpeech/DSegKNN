@@ -9,6 +9,17 @@ DSegKNN, is an unsupervised kNN-based approach for word segmentation in speech u
 
 The paper can be found [here](https://arxiv.org/pdf/2204.13094.pdf). 
 
+If you find our work useful, please cite: 
+```
+@inproceedings{fuchs22_interspeech,
+  author={Tzeviya Fuchs and Yedid Hoshen and Yossi Keshet},
+  title={{Unsupervised Word Segmentation using K Nearest Neighbors}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={4646--4650},
+  doi={10.21437/Interspeech.2022-11474}
+}
+```
 
 ------
 
